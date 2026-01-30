@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>My Restaurant — Menu & Order</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .pullquote mark { background: #ffeaa7; padding: 0 4px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Restaurant</h1>
+    <p style="margin:6px 0 0;">Fresh food • Best taste</p>
+    <div class="inline-note">Open today: <time datetime="2026-01-30">Jan 30, 2026</time> — 09:00–22:00</div>
+  </header>
+
+  <p class="pullquote">Special today: <mark>20% OFF</mark> on all main courses!</p>
+
+  <nav>
+    <a href="#menu">Menu</a> |
+    <a href="#order">Order</a> |
+    <a href="#reviews">Reviews</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <figure>
+      <img src="img.avif" alt="Assorted dishes" />
+      <figcaption><strong>Delicious & fresh —</strong> Pizza, Biryani & Burger served daily.</figcaption>
+    </figure>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p class="menu-desc">
+        We serve <strong>fresh ingredients</strong> with <em>traditional recipes</em>.
+        Our chef’s special changes daily.
+      </p>
+    </section>
+
+    <section id="menu">
+      <h2 style="text-align:center;">Menu Price List</h2>
+
+      <table aria-label="Today's special menu">
+        <caption>Today's Special Menu</caption>
+
+        <thead style= "background-color: rgb(170, 85, 85);">
+          <tr>
+            <th>Dish</th>
+            <th>Details</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><mark>Margherita Pizza</mark> <span class="badge">Chef's pick</span></td>
+            <td>Fresh basil & mozzarella — <em>Vegetarian</em></td>
+            <td style="text-align:center;">₹400</td>
+          </tr>
+
+          <tr>
+            <td>Hyderabadi Biryani</td>
+            <td><strong>Signature</strong> — <i>contains nuts</i></td>
+            <td style="text-align:center;"><del>₹380</del> <ins>₹250</ins></td>
+          </tr>
+
+          <tr>
+            <td>Cheese Burger</td>
+            <td>Double cheddar + house sauce <small>(Add fries ₹60)</small></td>
+            <td style="text-align:center;">₹300</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="3">All prices include taxes. Call for group orders.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="reviews">
+      <h2>Customer Review</h2>
+      <blockquote>
+        "The biryani is authentic and delicious. Best taste ever!" — <cite>R. Patel</cite>
+      </blockquote>
+    </section>
+
+    <section id="order">
+      <h2>Place an Order</h2>
+
+      <form class="order-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="dish">Select Dish</label>
+        <select id="dish" name="dish">
+          <option>Margherita Pizza</option>
+          <option>Hyderabadi Biryani</option>
+          <option>Cheese Burger</option>
+        </select>
+
+        <label>Dining Option</label>
+        <label><input type="radio" name="dine" value="dinein" checked> Dine-in</label>
+        <label><input type="radio" name="dine" value="takeaway"> Takeaway</label>
+        <label><input type="radio" name="dine" value="delivery"> Delivery</label>
+
+        <label>Add Extras</label>
+        <label><input type="checkbox" name="extra" value="fries"> Fries (+₹60)</label>
+        <label><input type="checkbox" name="extra" value="drink"> Soft drink (+₹40)</label>
+        <label><input type="checkbox" name="extra" value="salad"> Salad (+₹50)</label>
+
+        <label for="search-dish">Search Dish</label>
+        <input id="search-dish" list="food" name="search-dish" placeholder="Start typing...">
+        <datalist id="food">
+          <option value="Margherita Pizza">
+          <option value="Hyderabadi Biryani">
+          <option value="Cheese Burger">
+          <option value="Pasta Arrabiata">
+        </datalist>
+
+        <label for="delivery-date">Preferred delivery date</label>
+        <input id="delivery-date" name="delivery-date" type="date">
+
+        <label for="msg">Special instructions</label>
+        <textarea id="msg" name="message" rows="3" placeholder="Allergies, spice level, etc."></textarea>
+
+        <div style="margin-top:12px;">
+          <input type="submit" value="Place Order">
+          <input type="reset" value="Clear">
+        </div>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="inline-note">Phone: <a href="tel:+">+91 12345 67890</a> • Email: <a href="mailto:">info@myrestaurant.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>© 2026 My Restaurant</strong> • <small>All Rights Reserved</small></p>
+    <address>123 Food Street, Flavor Town</address>
+  </footer>
+</body>
+</html>
