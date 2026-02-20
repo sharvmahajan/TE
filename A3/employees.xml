@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="employees.xsl"?>
+
+<employees>
+
+    <employee empId="E101">
+        <name>Sharv Mahajan</name>
+        <department>IT</department>
+        <designation>Software Engineer</designation>
+        <salary>60000</salary>
+        <email>sharv@email.com</email>
+        <joiningDate>2023-06-15</joiningDate>
+    </employee>
+
+    <employee empId="E102">
+        <name>Riya Sharma</name>
+        <department>HR</department>
+        <designation>HR Manager</designation>
+        <salary>55000</salary>
+        <email>riya@email.com</email>
+        <joiningDate>2022-04-10</joiningDate>
+    </employee>
+
+    <employee empId="E103">
+        <name>Amit Patel</name>
+        <department>Finance</department>
+        <designation>Accountant</designation>
+        <salary>50000</salary>
+        <email>amit@email.com</email>
+        <joiningDate>2021-08-20</joiningDate>
+    </employee>
+
+    <employee empId="E104">
+        <name>Neha Verma</name>
+        <department>IT</department>
+        <designation>Web Developer</designation>
+        <salary>58000</salary>
+        <email>neha@email.com</email>
+        <joiningDate>2023-01-12</joiningDate>
+    </employee>
+
+    <employee empId="E105">
+        <name>Rahul Singh</name>
+        <department>Marketing</department>
+        <designation>Marketing Executive</designation>
+        <salary>45000</salary>
+        <email>rahul@email.com</email>
+        <joiningDate>2022-11-05</joiningDate>
+    </employee>
+
+    <employee empId="E106">
+        <name>Pooja Kulkarni</name>
+        <department>HR</department>
+        <designation>HR Executive</designation>
+        <salary>48000</salary>
+        <email>pooja@email.com</email>
+        <joiningDate>2021-09-18</joiningDate>
+    </employee>
+
+    <employee empId="E107">
+        <name>Vikram Joshi</name>
+        <department>IT</department>
+        <designation>System Administrator</designation>
+        <salary>62000</salary>
+        <email>vikram@email.com</email>
+        <joiningDate>2020-07-22</joiningDate>
+    </employee>
+
+    <employee empId="E108">
+        <name>Anjali Mehta</name>
+        <department>Finance</department>
+        <designation>Financial Analyst</designation>
+        <salary>57000</salary>
+        <email>anjali@email.com</email>
+        <joiningDate>2023-03-30</joiningDate>
+    </employee>
+
+    <employee empId="E109">
+        <name>Karan Shah</name>
+        <department>IT</department>
+        <designation>Data Analyst</designation>
+        <salary>59000</salary>
+        <email>karan@email.com</email>
+        <joiningDate>2022-06-14</joiningDate>
+    </employee>
+
+    <employee empId="E110">
+        <name>Sneha Desai</name>
+        <department>Marketing</department>
+        <designation>Marketing Manager</designation>
+        <salary>65000</salary>
+        <email>sneha@email.com</email>
+        <joiningDate>2021-02-25</joiningDate>
+    </employee>
+
+    <employee empId="E111">
+        <name>Arjun Nair</name>
+        <department>IT</department>
+        <designation>Software Tester</designation>
+        <salary>52000</salary>
+        <email>arjun@email.com</email>
+        <joiningDate>2023-05-10</joiningDate>
+    </employee>
+
+    <employee empId="E112">
+        <name>Priya Iyer</name>
+        <department>Finance</department>
+        <designation>Finance Manager</designation>
+        <salary>70000</salary>
+        <email>priya@email.com</email>
+        <joiningDate>2020-12-01</joiningDate>
+    </employee>
+
+</employees>
