@@ -1,7 +1,9 @@
+package com.ebook;
+
 import java.io.*;
+import java.sql.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
-import java.sql.*;
 
 public class EbookServlet extends HttpServlet {
 
@@ -19,15 +21,12 @@ public class EbookServlet extends HttpServlet {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/ebookshop",
-                    "root",
-                    "");
+                    "jdbc:mysql://localhost:3306/ebookdb", "root", "");
 
             Statement stmt = con.createStatement();
-
             ResultSet rs = stmt.executeQuery("SELECT * FROM ebookshop");
 
-            out.println("<table border=1>");
+            out.println("<table border='1'>");
             out.println("<tr>");
             out.println("<th>ID</th>");
             out.println("<th>Title</th>");
