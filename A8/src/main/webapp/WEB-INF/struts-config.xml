@@ -1,0 +1,22 @@
+<struts-config>
+
+<message-resources parameter="ApplicationResources"/>
+
+<form-beans>
+<form-bean name="loginForm" type="com.login.LoginForm"/>
+</form-beans>
+
+<action-mappings>
+
+<action path="/login"
+type="com.login.LoginAction"
+name="loginForm"
+input="/login.jsp">
+
+<forward name="success" path="/success.jsp" redirect="true"/>
+
+</action>
+
+</action-mappings>
+
+</struts-config>
