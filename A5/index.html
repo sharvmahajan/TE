@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Chatbot</title>
+
+    <style>
+        #history{
+            border:1px solid black;
+            width:300px;
+            height:200px;
+            overflow:auto;
+            padding:10px;
+            margin-top:10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Banking Chatbot</h2>
+
+<input type="text" id="msg" placeholder="Enter command">
+<button onclick="send()">Send</button>
+<div id="history"></div>
+
+<script>
+
+let balance = 1000;
+
+function send()
+{
+    let text = document.getElementById("msg").value.toLowerCase();
+
+    let reply = "";
+
+    if(text.startsWith("deposit") || text.startsWith("add"))
+    {
+        let amount = parseInt(text.split(" ")[1]);
+
+        balance += amount;
+
+        reply = "Balance = ₹" + balance;
+    }
+
+    else if(text.startsWith("withdraw"))
+    {
+        let amount = parseInt(text.split(" ")[1]);
+
+        if(amount > balance)
+        {
+            reply = "Insufficient Balance";
+        }
+        else
+        {
+            balance -= amount;
+
+            reply = "Balance = ₹" + balance;
+        }
+    }
+
+    else if(text == "balance")
+    {
+        reply = "Balance = ₹" + balance;
+    }
+
+    else
+    {
+        reply = "Invalid Command";
+    }
+
+    let history = document.getElementById("history");
+
+    history.innerHTML +=
+    "<p><b>You:</b> " + text + "</p>" +
+    "<p><b>Bot:</b> " + reply + "</p>";
+
+    // Auto scroll down
+    history.scrollTop = history.scrollHeight;
+
+    document.getElementById("msg").value = "";
+}
+
+</script>
+
+</body>
+</html>
